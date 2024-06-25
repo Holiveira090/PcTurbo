@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- INFORMAÇÕES DO SITE -->
+    <title>PC Turbo - Maior E-commerce de Tecnologia da América Latina</title>
+
+    <!-- RECURSOS EXTERNOS -->
+    <link rel="stylesheet" href="../_css/main-style.css" />
+    <link rel="stylesheet" href="../_css/loginPage-style.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="../../index.html" class="logo">
+        <img src="../_img/website-icon.png" alt="PC Turbo Logo" class="" />
+      </a>
+
+      <nav class="nav">
+        <button
+          class="btn-menu"
+          aria-label="Abrir Menu Mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="menu" id="menu" role="menu">
+          <li><a href="../../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div id="container-main">
+        <main id="container">
+          <form id="login-form" action="../_php/userLogin.php" method="post">
+            <div id="form-header">
+              <h1>login</h1>
+              <!-- <i id="mode-icon" class="fa-solid fa-moon"></i> -->
+            </div>
+            <div id="social-media">
+              <a href="https://www.facebook.com">
+                <img src="../_img/facebook_logo.png" alt="Carregando..." />
+              </a>
+              <a href="https://www.google.com.br/?hl=pt-BR">
+                <img src="../_img/google_logo.png" alt="Carregando..." />
+              </a>
+              <a href="https://github.com">
+                <img src="../_img/github_logo.png" alt="Carregando..." />
+              </a>
+            </div>
+            <div id="inputs">
+              <div class="input-box">
+                Email
+                <div class="input-field">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="email" name="email" />
+                </div>
+              </div>
+            </div>
+            <div class="input-box">
+              <label for="password">
+                Senha
+                <div class="input-field">
+                  <i class="fa-solid fa-key"></i>
+                  <input type="password" id="password" name="password" />
+                </div>
+              </label>
+              <div id="forgot-password">
+                <a href="#"> Esqueceu sua senha? </a>
+                <a href="../_content/registerPage.html">
+                  <br />
+                  Não tem conta? cadastre-se aqui.
+                </a>
+              </div>
+            </div>
+            <button type="submit" id="login-button">Login</button>
+          </form>
+        </main>
+      </div>
+    </section>
+    <script src="_assets/_js/login_tema.js"></script>
+
+    <footer>
+      <div id="footer-content">
+        <div id="footer-contacts">
+          <h1>Redes Sociais</h1>
+          <p>Conectando pessoas, construindo comunidades.</p>
+          <div id="footer-social-media">
+            <a
+              href="https://www.instagram.com"
+              class="footer-link"
+              id="instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              class="footer-link"
+              id="facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://web.whatsapp.com"
+              class="footer-link"
+              id="whatsapp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <h3>Sobre</h3>
+          </li>
+          <li>
+            <a href="../../index.html" class="footer-link">Home</a>
+          </li>
+          <li>
+            <a href="../../index.html#sobre-section" class="footer-link">Nossas informações</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <h3>Produtos</h3>
+          </li>
+          <li>
+            <a href="../../index.html" class="footer-link">Mais Novos</a>
+          </li>
+          <li>
+            <a href="../../index.html#promo-txt" class="footer-link">Promoções</a>
+          </li>
+        </ul>
+        <div id="footer-subscribr">
+          <h3>Se Inscreva</h3>
+          <p>
+            Digite seu e-mail para ser notificado sobre nossas promoções mais
+            recentes.
+          </p>
+          <div id="input-group">
+            <input type="email" id="email" />
+            <button>
+              <i class="fa-regular fa-envelope"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="footer-copyright">&copy; Meu primeiro site</div>
+    </footer>
+
+    <script src="../_js/appMain.js"></script>
+  </body>
+</html>

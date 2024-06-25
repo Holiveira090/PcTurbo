@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- INFORMAÇÕES DO SITE -->
+    <title>PC Turbo - Maior E-commerce de Tecnologia da América Latina</title>
+
+    <!-- RECURSOS EXTERNOS -->
+    <link rel="stylesheet" href="../_css/main-style.css" />
+    <link rel="stylesheet" href="../_css/homePage-style.css" />
+    <!-- <link rel="stylesheet" href="../_css/clientRegisterPage-style.css" /> -->
+    <link rel="stylesheet" href="../_css/productRegisterPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="./homePage.html" class="logo">
+        <img src="../_img/website-icon.png" alt="PC Turbo Logo" class="" />
+      </a>
+
+      <nav class="nav">
+        <button
+          class="btn-menu"
+          aria-label="Abrir Menu Mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="menu" id="menu" role="menu">
+          <li><a href="./homePage.html">Home</a></li>
+          <!-- <li><a href="homePage.html#about-section">Sobre</a></li> -->
+          <li class="dropdown">
+            <a href="#" id="cadastro-dp">Cadastrar</a>
+            <div class="dropdown-menu">
+              <a href="clientRegisterPage.html" id="clientes-dp">Clientes</a>
+              <a href="productRegisterPage.html" id="produtos-dp">Produtos</a>
+            </div>
+          </li>
+          <li><a href="../../index.html">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <button type="button" class="button blue mobile" id="cadastrarProduto">
+        Cadastrar Produtos
+      </button>
+      <table class="records">
+        <thead>
+          <tr>
+            <th>Nome do produto</th>
+            <th>Descrição do produto</th>
+            <th>Estoque disponível</th>
+            <th>Local de origem</th>
+            <th>Imagem</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="product-list"></tbody>
+      </table>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2 id="modalTitle">Novo Produto</h2>
+            <span class="modal-close" id="modalCloseP">&#10006;</span>
+          </header>
+          <form class="modal-form">
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="Nome do produto"
+              id="nomeProdutoInput"
+            />
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="Descrição do produto"
+              id="descricaoProdutoInput"
+            />
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="Estoque disponível"
+              id="estoqueProdutoInput"
+            />
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="Local de origem"
+              id="localProdutoInput"
+            />
+            <input
+              type="text"
+              class="modal-field"
+              placeholder="URL da Imagem"
+              id="urlProdutoInput"
+            />
+          </form>
+          <footer class="modal-footer">
+            <button class="button green" id="salvarProduto">Salvar</button>
+            <button class="button blue" id="cancelButtonProduct">
+              Cancelar
+            </button>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <div id="footer-content">
+      <div id="footer-contacts">
+        <h1>Redes Sociais</h1>
+        <p>Conectando pessoas, construindo comunidades.</p>
+        <div id="footer-social-media">
+          <a
+            href="https://www.instagram.com"
+            class="footer-link"
+            id="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com" class="footer-link" id="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://web.whatsapp.com" class="footer-link" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <ul class="footer-list">
+        <li>
+          <h3>Sobre</h3>
+        </li>
+        <li>
+          <a href="homePage.html" class="footer-link">Home</a>
+        </li>
+        <li>
+          <a href="homePage.html#sobre-section" class="footer-link">Nossas informações</a>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li>
+          <h3>Produtos</h3>
+        </li>
+        <li>
+          <a href="homePage.html#carrossel" class="footer-link">Mais Novos</a>
+        </li>
+        <li>
+          <a href="homePage.html#promo-txt" class="footer-link">Promoções</a>
+        </li>
+      </ul>
+      <div id="footer-subscribr">
+        <h3>Se Inscreva</h3>
+        <p>
+          Digite seu e-mail para ser notificado sobre nossas promoções mais
+          recentes.
+        </p>
+        <div id="input-group">
+          <input type="email" id="email" />
+          <button>
+            <i class="fa-regular fa-envelope"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="footer-copyright">&copy; Meu primeiro site</div>
+  </footer>
+
+  <script src="../_js/appMain.js"></script>
+  <script src="../_js/appMain-Product.js"></script>
+</html>

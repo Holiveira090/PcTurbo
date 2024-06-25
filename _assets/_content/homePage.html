@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- INFORMAÇÕES DO SITE -->
+    <title>PC Turbo - Maior E-commerce de Tecnologia da América Latina</title>
+
+    <!-- RECURSOS EXTERNOS -->
+    <link rel="stylesheet" href="../_css/main-style.css" />
+    <link rel="stylesheet" href="../_css/homePage-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="./homePage.html" class="logo">
+        <img src="../_img/website-icon.png" alt="PC Turbo Logo" class="" />
+      </a>
+
+      <nav class="nav">
+        <button
+          class="btn-menu"
+          aria-label="Abrir Menu Mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+
+        <ul class="menu" id="menu" role="menu">
+          <li><a href="./homePage.html">Home</a></li>
+          <li><a href="#about-section">Sobre</a></li>
+          <li class="dropdown">
+            <a href="#" id="cadastro-dp">Cadastrar</a>
+            <div class="dropdown-menu">
+              <a href="clientRegisterPage.html" id="clientes-dp">Clientes</a>
+              <a href="productRegisterPage.html" id="produtos-dp">Produtos</a>
+            </div>
+          </li>
+          <li><a href="../../index.html">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CARROSSEL DE IMAGENS -->
+    <section class="slider" id="carrossel">
+      <div class="slider-content">
+        <input type="radio" name="btn-radio" id="radio1" />
+        <input type="radio" name="btn-radio" id="radio2" />
+        <input type="radio" name="btn-radio" id="radio3" />
+        <input type="radio" name="btn-radio" id="radio4" />
+
+        <div class="slide-box primeiro">
+          <img
+            class="img-desktop"
+            src="../_img/slide 1 1800.png"
+            alt="Carregando..."
+          />
+          <img
+            class="img-mobile"
+            src="../_img/slide1  1040.jpg"
+            alt="Carregando..."
+          />
+        </div>
+        <div class="slide-box">
+          <img
+            class="img-desktop"
+            src="../_img/slide 2 1800.png"
+            alt="Carregando..."
+          />
+          <img
+            class="img-mobile"
+            src="../_img/slide 2 1040.jpg"
+            alt="Carregando..."
+          />
+        </div>
+        <div class="slide-box">
+          <img
+            class="img-desktop"
+            src="../_img/slide 3 1800.png"
+            alt="Carregando..."
+          />
+          <img
+            class="img-mobile"
+            src="../_img/slide3 1040.png"
+            alt="Carregando..."
+          />
+        </div>
+        <div class="slide-box">
+          <img
+            class="img-desktop"
+            src="../_img/slide4.png"
+            alt="Carregando..."
+          />
+          <img
+            class="img-mobile"
+            src="../_img/slide4 1040.png"
+            alt="Carregando..."
+          />
+        </div>
+
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+
+        <div class="nav-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS DE TEXTO -->
+    <div id="about-section"></div>
+    <section class="section">
+      <div class="column">
+        <h2>Historia da Empresa</h2>
+        <br />
+        <p>
+          Somos uma empresa líder no setor de informática, comprometida em
+          fornecer soluções tecnológicas inovadoras que impulsionam o sucesso de
+          nossos clientes. Nossa dedicação está centrada em oferecer serviços
+          especializados e um suporte técnico de excelência, garantindo que
+          nossos clientes tenham as ferramentas e o conhecimento necessários
+          para prosperar no ambiente digital em constante evolução.
+        </p>
+        <br />
+        <br />
+        <br />
+      </div>
+      <div class="column">
+        <h2>Diferencial da Empresa</h2>
+        <br />
+        <p>
+          Na vanguarda da inovação, nossa empresa se destaca pelo compromisso
+          inabalável com a excelência. Além de oferecer soluções tecnológicas de
+          ponta, nosso diferencial reside em um suporte técnico excepcional.
+          Estamos empenhados em capacitar nossos clientes não apenas com
+          ferramentas avançadas, mas também com o conhecimento necessário para
+          prosperar no cenário digital em constante evolução. Nosso compromisso
+          vai além da venda de produtos; é uma parceria que impulsiona o sucesso
+          de quem confia em nossos serviços.
+        </p>
+      </div>
+      <div class="column">
+        <h2>Missão, valores da empresa</h2>
+        <br />
+        <p>
+          Nossa missão é ser a força propulsora do sucesso de nossos clientes,
+          proporcionando soluções tecnológicas inovadoras e serviços
+          especializados de alta qualidade. Guiados por valores fundamentais
+          como integridade, comprometimento e excelência, buscamos não apenas
+          atender, mas superar as expectativas de nossos parceiros. Acreditamos
+          que o conhecimento é a chave para prosperar no mundo digital em
+          constante evolução, e nosso compromisso é compartilhar esse
+          conhecimento, construindo uma parceria sólida e duradoura com todos
+          que confiam em nossa empresa.
+        </p>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <div id="container-txt">
+      <div id="promo-txt">
+        <h1>Confira nossas incríveis Ofertas!</h1>
+      </div>
+    </div>
+
+    <div class="container-cards" id="products-container"></div>
+
+    <footer>
+      <div id="footer-content">
+        <div id="footer-contacts">
+          <h1>Redes Sociais</h1>
+          <p>Conectando pessoas, construindo comunidades.</p>
+          <div id="footer-social-media">
+            <a
+              href="https://www.instagram.com"
+              class="footer-link"
+              id="instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.facebook.com"
+              class="footer-link"
+              id="facebook"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://web.whatsapp.com"
+              class="footer-link"
+              id="whatsapp"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <h3>Sobre</h3>
+          </li>
+          <li>
+            <a href="homePage.html" class="footer-link">Home</a>
+          </li>
+          <li>
+            <a href="homePage.html#sobre-section" class="footer-link">Nossas informações</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <h3>Produtos</h3>
+          </li>
+          <li>
+            <a href="#carrossel" class="footer-link">Mais Novos</a>
+          </li>
+          <li>
+            <a href="homePage.html#promo-txt" class="footer-link">Promoções</a>
+          </li>
+        </ul>
+        <div id="footer-subscribr">
+          <h3>Se Inscreva</h3>
+          <p>
+            Digite seu e-mail para ser notificado sobre nossas promoções mais
+            recentes.
+          </p>
+          <div id="input-group">
+            <input type="email" id="email" />
+            <button>
+              <i class="fa-regular fa-envelope"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="footer-copyright">&copy; Meu primeiro site</div>
+    </footer>
+
+    <script src="../_js/appMain.js"></script>
+  </body>
+</html>
